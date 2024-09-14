@@ -1,10 +1,6 @@
 from DeckOfCards import Card, DeckOfCards, calculate_hand_value
 
 
-
-
-
-# Main game loop
 while True:
     print("Welcome to Blackjack!")
     choice = input("Do you want to play? (yes/no): ").lower()
