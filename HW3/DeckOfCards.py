@@ -47,4 +47,5 @@ def calculate_hand_value(hand):
         ace_count -= 1
 
     return hand_value
+
         
