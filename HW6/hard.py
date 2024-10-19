@@ -9,7 +9,7 @@ def max_difference(arr):
   min_num = float('inf') #Store the minumum and maximum number
   max_num = float('-inf')
 
-  for num in arr: #Iterate through the array to find the minum and maximum number
+  for num in arr: #O(n), Iterate through the array to find the minum and maximum number
     if num < min_num:
       min_num = num
     if num > max_num:
@@ -17,7 +17,7 @@ def max_difference(arr):
 
   return max_num - min_num #Return the difference
 
-
+""" Big O notation is O(n) the array gets passed once and the variables are extracted as directed to find the maximum range"""
 # Example usage:
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 max_diff = max_difference(arr)
