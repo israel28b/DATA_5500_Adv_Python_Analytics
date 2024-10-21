@@ -5,13 +5,13 @@
 
 def find_second_largest(arr):
 
-  if len(arr) < 2:
+  if len(arr) < 2: #Make sure array is proper length
     return None
 
-  largest = float('-inf')
+  largest = float('-inf') #Store the largest number, second largest number
   second_largest = float('-inf')
 
-  for num in arr: #O(n)
+  for num in arr: #O(n), Iterate through array to evaluate the largest number, then use that to find the second highest number
     if num > largest:
       second_largest = largest
       largest = num
